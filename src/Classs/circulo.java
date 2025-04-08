@@ -4,7 +4,7 @@ public class circulo {
 	private int id;
 	private double radio;
 	private String color;
-}
+
 	//Constructor 
 	public circulo(int id, double radio, String color) {
 	super();
@@ -43,4 +43,11 @@ public class circulo {
 	public String toString() {
 	return "circulo [id=" + id + ", radio=" + radio + ", color=" + color + "]";
 	}
+	public static double CalcularAreaCirculo(circulo circulo1) {
+		//Calcular area Circulo: pi * r * r
+		double radio = circulo1.getRadio();
+		double pi = 3.14;
+		double areacirculo = radio * radio * pi;
+		return areacirculo;
+		}
 }

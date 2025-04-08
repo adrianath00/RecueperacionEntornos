@@ -59,5 +59,14 @@ public class rectangulp {
 	public String toString() {
 		return "rectangulp [id=" + id + ", nombre=" + nombre + ", ladoA=" + ladoA + ", ladoB=" + ladoB + "]";
 	}
+	public static double CalcularAreaRectangulo(rectangulp rectangulo1) {
+		// Calcular area rectangulo: ladoA*ladoB 
+		double ladoA = rectangulo1.getLadoA();
+		double ladoB = rectangulo1.getLadoB();
+		double areaRectangulo = ladoA+ladoB;
+		return areaRectangulo;
+	}
+ 
 }
+
 
